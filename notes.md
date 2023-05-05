@@ -113,6 +113,24 @@ Nested Depends:
 - Repository field?
 
 
+Vignettes
+
+- consider splitting up ohun.Rmd into multiple vignettes
+    - Get started vignette
+        - Background and theory
+        - How does ohun fit in
+        - What other packages does ohun interface with
+        - Overview of functions provided by ohun
+    - Energy based detection
+    - Template based detection
+    - FAQ / best practices / advice / tips
+
+- clean
+    - remove &nbsp; 
+    - remove &#x3A; from title
+    - remove old outpuit format
+    - example printing has `[39m[90m|`
+
 
 # Checks
 
