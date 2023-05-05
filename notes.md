@@ -7,13 +7,18 @@ Delete
 - .Rdata
 - testing/
 
+
+
 Documentation
+
 - is docs/ required if using branch gh-pages?
 - ignore rendered vignette?
 
 
 
+README
 
+- L14 alt "baRulho" 
 # Checks
 
 Data
