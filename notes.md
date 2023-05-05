@@ -19,6 +19,13 @@ Documentation
 README
 
 - L14 alt "baRulho" 
+
+
+
+NEWS
+
+- Link to PRs and issues
+
 # Checks
 
 Data
