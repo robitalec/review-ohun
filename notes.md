@@ -141,6 +141,15 @@ Contribution
 - Note the rOpenSci Code of Conduct, especially the Reporting Guidelines section: https://ropensci.org/code-of-conduct/. An issue board may be ok in some cases, but an alternative, private method of communication would be helpful as well
 - TODO minor edits
 
+
+
+Documentation
+
+- not necessary to wrap documentation chunks with curly braces
+- remove last modification date (this information is redundant and more error prone than Git)
+
+
+
 # Checks
 
 
