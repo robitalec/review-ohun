@@ -6,3 +6,7 @@ Delete
 - ..pdf
 - .Rdata
 - testing/
+
+Documentation
+- is docs/ required if using branch gh-pages?
+- ignore rendered vignette?
