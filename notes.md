@@ -108,6 +108,9 @@ Nested Depends:
     - knitr
 
 
+- Date/Publication field?
+- Config/testthat/edition field?
+- Repository field?
 
 
 
