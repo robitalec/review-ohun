@@ -38,6 +38,7 @@ CI
 
 
 R/
+- split off nested functions
 - ohun_package.R
     - "parallelization of tasks" 
         - using which parallel backend?
