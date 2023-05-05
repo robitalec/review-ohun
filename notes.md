@@ -51,5 +51,19 @@ see https://github.com/leeper/Depends
 
 # Checks
 
+
+
 Data
 - Data stored as R objects in data/ 
+
+
+
+R/
+- good file names
+
+
+Dependencies
+- importFrom, ... all in R/ohun-package.R
+
+
+Double @@ in email, though seems to render well on marce10.github.io/ohun
