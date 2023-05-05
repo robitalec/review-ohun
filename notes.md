@@ -8,6 +8,10 @@ Delete
 - testing/
 
 
+Repository size
+
+~ 120 mb
+
 
 Documentation
 
