@@ -46,6 +46,24 @@ R/
 Using internal functions from another package in 12 cases, though given all 12 are from warbleR and the maintainer of ohun is also the maintainer of warbleR this seems ok
 
 
+- stop2, warning2 function are custom functions so the call isnt printed.. why?
+
+with `stop2`
+R: label_detection(reference = matrix(lbh_reference[-1, ]), detection = lbh_reference)
+Error: 'reference' is not of a class 'data.frame' or 'selection_table'
+
+with `stop`
+R: label_detection(reference = matrix(lbh_reference[-1, ]), detection = lbh_reference)
+Error in label_detection(reference = matrix(lbh_reference[-1, ]), detection = lbh_reference) : 
+  'reference' is not of a class 'data.frame' or 'selection_table'
+
+`stop2` is used 105 times across 14 files
+
+`warning2` is used 3 times across 3 files
+
+
+Warnings are suppressed in feature_reference.R 3 times and in optimize_energy_detector.R 2 times
+
 DESCRIPTION
 - dependencies
     - see below for run pak::pkg_deps_tree("ohun")
