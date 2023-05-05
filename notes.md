@@ -64,6 +64,29 @@ Error in label_detection(reference = matrix(lbh_reference[-1, ]), detection = lb
 
 Warnings are suppressed in feature_reference.R 3 times and in optimize_energy_detector.R 2 times
 
+
+Curly braces are variably used 
+
+eg. in `find_templates`
+```
+    t2xy <- function(t) {
+      t2p <- 2 * pi * t + 0 * pi / 180
+      list(x = radius * cos(t2p), y = radius * sin(t2p))
+    }
+
+    if (plot)
+      plot(
+        space[, 1] + mean_dim1,
+        space[, 2] + mean_dim2,
+        pch = 20,
+        cex = 2,
+        col = color,
+        xlab = xlab,
+        ylab = ylab
+      )
+```
+
+
 DESCRIPTION
 - dependencies
     - see below for run pak::pkg_deps_tree("ohun")
