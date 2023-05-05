@@ -28,6 +28,11 @@ NEWS
 
 
 
+CI
+- tic
+
+
+
 R/
 - ohun_package.R
     - "parallelization of tasks" 
@@ -46,6 +51,18 @@ DESCRIPTION
 (from https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-imports-vs-depends)
 
 see https://github.com/leeper/Depends
+
+Nested Depends:
+- From warbleR
+    - tuneR, seewave (>= 2.0.1), NatureSounds
+- From tuneR
+    - None
+- From seewave
+    - None
+- From NatureSounds
+    - knitr
+
+
 
 
 
