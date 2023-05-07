@@ -114,9 +114,9 @@ Nested Depends:
     - knitr
 
 
-- Date/Publication field?
-- Config/testthat/edition field?
-- Repository field?
+- ~~Date/Publication field?~~
+- ~~Config/testthat/edition field?~~
+- ~~Repository field?~~
 
 
 Vignettes
