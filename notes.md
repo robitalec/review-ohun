@@ -95,6 +95,7 @@ eg. in `find_templates`
 DESCRIPTION
 - dependencies
     - see below for run pak::pkg_deps_tree("ohun")
+    - https://devguide.ropensci.org/building.html#pkgdependencies
 - listing in Depends
 
 > A more classic example of Depends is how the censored package depends on the parsnip and survival packages. Parsnip provides a unified interface for fitting models, and censored is an extension package for survival analysis. Censored is not useful without parsnip and survival, so it makes sense to list them in Depends.
