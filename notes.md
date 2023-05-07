@@ -8,6 +8,9 @@ Delete
 - testing/
 
 
+Keep ohun.Rproj for collaborators?
+
+
 Repository size
 
 ~ 120 mb
