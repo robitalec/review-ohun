@@ -25,7 +25,7 @@ Documentation
 
 README
 
-- L14 alt "baRulho" 
+- ~~L14 alt "baRulho"~~
 - how does ohun fit into the larger ecosystem? which packages does it work with? what other packages provide similar functionality?
 
 
