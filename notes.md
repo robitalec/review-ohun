@@ -141,11 +141,11 @@ Vignettes
 
 Contribution
 
-- title "Contributing to CONTRIBUTING.md"
-- Code of conduct link is broken
+- ~~title "Contributing to CONTRIBUTING.md"~~
+- ~~Code of conduct link is broken~~
 - No code of conduct found in repository
 - Note the rOpenSci Code of Conduct, especially the Reporting Guidelines section: https://ropensci.org/code-of-conduct/. An issue board may be ok in some cases, but an alternative, private method of communication would be helpful as well
-- TODO minor edits
+- ~~TODO minor edits~~
 
 
 
