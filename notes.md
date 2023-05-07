@@ -155,6 +155,13 @@ Documentation
 - remove last modification date (this information is redundant and more error prone than Git)
 
 
+Citation
+
+- consider adding a citation file (https://devguide.ropensci.org/building.html#citation-file)
+
+
+
+
 
 # Checks
 
