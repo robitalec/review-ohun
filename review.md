@@ -203,3 +203,13 @@ a very useful test, and while testing plots is not straightforward or intuitive,
 you could see if `vdiffr` helps! More detailed comments on testing below.
 
 Detailed comments on package dependencies below.
+
+#### Additional comments
+
+The following sections have further details from above, and sometimes an 
+accompanying pull request. I found it easier to work through the review by
+looking at the source code locally, and making changes as I noticed things. 
+I also felt like it would be easier to highlight specific lines of code
+by just editing them, instead of referring to eg. Lines 83-85 in some file. 
+No pressure to accept any of these pull requests directly, and I hope that you
+find it a clear and useful approach. 
