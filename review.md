@@ -488,3 +488,38 @@ Relevant pull request:
 
 https://github.com/maRce10/ohun/pull/16/
 
+
+##### Tests
+
+I suggested some edits to the test scripts to better take advantage of the
+variety and precision of available functions from `testthat`. Often, the 
+tests were `expect_true` where you set up a logical statement, eg. `nrow(DT) == 3`. 
+This works but when it fails, there is nothing informative about the error. 
+Alternatively, if you set this test using `expect_length` then you would
+get a numeric difference between expectation and result. This might make it
+easier to identify why or how the test is failing. 
+
+I also suggest using a skip_on_windows function. 
+
+Writing tests can be really hard (and rewarding!) - I found these resources 
+helpful:
+
+- https://r-pkgs.org/testing-design.html#what-to-test
+- https://devguide.ropensci.org/building.html#testing
+
+Specifically in the first link "avoid testing simple code [...] test what you're
+not sure about, what's fragile, ...". This is a great opportunity for you 
+to put your deep understanding about this kind of analysis to work, because you
+know when results don't look right, beyond the basic "is it a data.frame", etc. 
+
+I've adjusted some of the tests where I noticed an alternative function that might
+be more informative. Here's the pull request:
+
+https://github.com/maRce10/ohun/pull/17
+
+
+Note: if packages are moved from Depends, it may require them to be explicitly
+loaded with `library()` in the tests where their functions are used. 
+
+
+
