@@ -87,3 +87,46 @@ In `feature_acoustic_data.R`:
 - 
 
 For **Community guidelines:**,
+
+
+
+Packaging guidelines
+
+
+1 Packaging Guide
+1.1 Package name and metadata
+    1.1.1 Naming your package
+    1.1.2 Creating metadata for your package
+1.2 Platforms
+1.3 Package API
+    1.3.1 Function and argument naming
+    1.3.2 Console messages
+    1.3.3 Interactive/Graphical Interfaces
+1.4 Code Style
+1.5 CITATION file
+1.6 README
+1.7 Documentation
+    1.7.1 General
+    1.7.2 roxygen2 use
+    1.7.3 URLs in documentation
+1.8 Documentation website
+    1.8.1 Automatic deployment of the documentation website
+    1.8.2 Grouping functions in the reference
+    1.8.3 Branding of authors
+    1.8.4 Tweaking the navbar
+    1.8.5 Mathjax
+    1.8.6 Package logo
+1.9 Authorship
+    1.9.1 Authorship of included code
+1.10 Licence
+1.11 Testing
+1.12 Examples
+1.13 Package dependencies
+1.14 Recommended scaffolding
+1.15 Version Control
+1.16 Miscellaneous CRAN gotchas
+    1.16.1 CRAN checks
+1.17 Bioconductor gotchas
+1.18 Further guidance
+    1.18.1 Learning about package development
+
