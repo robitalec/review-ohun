@@ -129,3 +129,20 @@ messages and warnings in the rendered vignette, because a user may be surprised
 and confused to see them appear locally, when they are not shown in the
 vignette.
 
+
+**Function Documentation** 
+
+
+
+**Examples**
+
+- Found errors locally using `devtools::run_examples()`
+
+
+If recommendation to move `tuneR` to , the following issues can be resolved
+
+In `feature_acoustic_data.R`:
+
+- `could not find function "writeWave"` fixed by adding `library(tuneR)`
+
+
