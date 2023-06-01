@@ -238,8 +238,6 @@ Double @@ in email, though seems to render well on marce10.github.io/ohun
 
 ```
 R: pak::pkg_deps_tree("ohun")
-✔ Updated metadata database: 2.20 MB in 6 files.                          
-✔ Updating metadata database ... done                                     
 ohun 0.1.0 [new][bld][dl] (2.64 MB)                                        
 ├─tuneR 1.4.3 [new][bld][cmp][dl] (427.79 kB)
 │ └─signal 0.7-7 [new][bld][cmp][dl] (1.96 MB)
