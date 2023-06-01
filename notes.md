@@ -227,6 +227,7 @@ Double @@ in email, though seems to render well on marce10.github.io/ohun
 
 # Deps tree
 
+```
 R: pak::pkg_deps_tree("ohun")
 ✔ Updated metadata database: 2.20 MB in 6 files.                          
 ✔ Updating metadata database ... done                                     
@@ -351,3 +352,4 @@ ohun 0.1.0 [new][bld][dl] (2.64 MB)
 └─Sim.DiffProc 4.8 [new][bld][cmp][dl] (1.12 MB)
   ├─Deriv 4.1.3 [new][bld][dl] (37.21 kB)
   └─MASS
+```
