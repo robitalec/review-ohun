@@ -28,7 +28,7 @@ README
 - ~~L14 alt "baRulho"~~
 - how does ohun fit into the larger ecosystem? which packages does it work with? what other packages provide similar functionality?
     - 2nd point here https://devguide.ropensci.org/building.html#general
-
+- R-CMD-check where does this point to because most recent tests are failling on tic
 
 NEWS
 
