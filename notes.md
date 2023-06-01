@@ -135,7 +135,8 @@ functions other than they will return the right length?
 - expect NULL for a side effect function.. test-label_spectro
 - https://r-pkgs.org/testing-design.html
 - could also consider writing an internal function to load and write files
-to the temp dir see https://r-pkgs.org/testing-advanced.html
+to the temp dir see https://r-pkgs.org/testing-advanced.html, but see here
+for more discussion (from packaging guidelines) https://mtlynch.io/good-developers-bad-tests/
 
 
 
