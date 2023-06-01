@@ -84,7 +84,8 @@ In `feature_acoustic_data.R`:
 **Packaging guidelines**
 
 - curly braces (looks like fixed using styler package (https://github.com/robitalec/ohun/commit/6a32910cd5a794e274dc96ca44a1ca486434e075)) 
-- 
+- don't forget to update codemeta
+- looks good: snake case, object verb
 
 For **Community guidelines:**,
 
@@ -93,40 +94,102 @@ For **Community guidelines:**,
 Packaging guidelines
 
 
-1 Packaging Guide
-1.1 Package name and metadata
-    1.1.1 Naming your package
-    1.1.2 Creating metadata for your package
-1.2 Platforms
-1.3 Package API
-    1.3.1 Function and argument naming
-    1.3.2 Console messages
-    1.3.3 Interactive/Graphical Interfaces
-1.4 Code Style
-1.5 CITATION file
-1.6 README
-1.7 Documentation
-    1.7.1 General
-    1.7.2 roxygen2 use
-    1.7.3 URLs in documentation
-1.8 Documentation website
-    1.8.1 Automatic deployment of the documentation website
-    1.8.2 Grouping functions in the reference
-    1.8.3 Branding of authors
-    1.8.4 Tweaking the navbar
-    1.8.5 Mathjax
-    1.8.6 Package logo
-1.9 Authorship
-    1.9.1 Authorship of included code
-1.10 Licence
-1.11 Testing
-1.12 Examples
-1.13 Package dependencies
-1.14 Recommended scaffolding
-1.15 Version Control
-1.16 Miscellaneous CRAN gotchas
-    1.16.1 CRAN checks
-1.17 Bioconductor gotchas
-1.18 Further guidance
-    1.18.1 Learning about package development
+- 1 Packaging Guide
+- 1.1 Package name and metadata
+    - 1.1.1 Naming your package
+      + looks good
+    - 1.1.2 Creating metadata for your package
+      + don't forget to update (https://github.com/ropensci/codemetar#keep-codemetajson-up-to-date)
+- 1.2 Platforms
+- 1.3 Package API
+    - 1.3.1 Function and argument naming
+      + looks good: snake case, object verb
+      + not clear that functions are easily pipeable, if so, consider including
+        an example in a vignette with the pipe `|>`
+      
+```r
+library(ohun)
+#> Loading required package: tuneR
+#> Loading required package: warbleR
+#> Loading required package: seewave
+#> Loading required package: NatureSounds
+#> Loading required package: knitr
+lsf.str('package:ohun')
+#> consensus_detection : function (detection, by = "overlap", filter = "max", cores = 1, pb = TRUE)  
+#> diagnose_detection : function (reference, detection, by.sound.file = FALSE, time.diagnostics = FALSE, 
+#>     cores = 1, pb = TRUE, path = NULL, by = NULL, macro.average = FALSE, 
+#>     min.overlap = 0.5)  
+#> energy_detector : function (files = NULL, envelopes = NULL, path = ".", hop.size = 11.6, 
+#>     wl = NULL, thinning = 1, bp = NULL, smooth = 5, threshold = 5, peak.amplitude = 0, 
+#>     hold.time = 0, min.duration = 0, max.duration = Inf, cores = 1, pb = TRUE)  
+#> feature_acoustic_data : function (path = ".", digits = 2)  
+#> feature_reference : function (reference, path = NULL, by.sound.file = FALSE, units = c("ms", 
+#>     "kHz"), digits = 2)  
+#> filter_detection : function (detection, by = "overlap", filter = "max", cores = 1, pb = TRUE)  
+#> get_envelopes : function (path = ".", files = NULL, bp = NULL, hop.size = 11.6, wl = NULL, 
+#>     cores = 1, thinning = 1, pb = TRUE, smooth = 5, normalize = TRUE)  
+#> get_templates : function (reference, acoustic.space = NULL, path = ".", n.sub.spaces = 1, 
+#>     plot = TRUE, color = "#21908C4D", ...)  
+#> label_detection : function (reference, detection, cores = 1, pb = TRUE, min.overlap = 0.5)  
+#> label_spectro : function (wave, reference = NULL, detection = NULL, envelope = FALSE, threshold = NULL, 
+#>     smooth = 5, collevels = seq(-100, 0, 5), palette = viridis::viridis, 
+#>     template.correlation = NULL, line.x.position = 2, hop.size = NULL, 
+#>     ...)  
+#> merge_overlaps : function (X, pb = TRUE, cores = 1)  
+#> optimize_energy_detector : function (reference, files = NULL, threshold = 5, peak.amplitude = 0, hop.size = 11.6, 
+#>     wl = NULL, smooth = 5, hold.time = 0, min.duration = NULL, max.duration = NULL, 
+#>     thinning = 1, cores = 1, pb = TRUE, by.sound.file = FALSE, bp = NULL, 
+#>     path = ".", previous.output = NULL, envelopes = NULL, macro.average = FALSE, 
+#>     min.overlap = 0.5)  
+#> optimize_template_detector : function (template.correlations, reference, threshold, cores = 1, pb = TRUE, 
+#>     by.sound.file = FALSE, previous.output = NULL, macro.average = FALSE, 
+#>     min.overlap = 0.5)  
+#> split_acoustic_data : function (path = ".", sgmt.dur = 10, sgmts = NULL, files = NULL, cores = 1, 
+#>     pb = TRUE, only.sels = FALSE, X = NULL)  
+#> summarize_diagnostic : function (diagnostic, time.diagnostics = FALSE, macro.average = FALSE)  
+#> template_correlator : function (templates, files = NULL, hop.size = 11.6, wl = NULL, ovlp = 0, 
+#>     wn = "hanning", cor.method = "pearson", cores = 1, path = ".", pb = TRUE, 
+#>     type = "fourier", fbtype = "mel", ...)  
+#> template_detector : function (template.correlations, cores = 1, threshold, pb = TRUE, verbose = TRUE)
+```
+    - 1.3.2 Console messages
+      + see note about message2() and warning2()
+    - 1.3.3 Interactive/Graphical Interfaces
+- 1.4 Code Style
+      + looks good: recent commit with styler package
+- 1.5 CITATION file
+      + looks good
+      + consider using a cffr GitHub action: https://docs.ropensci.org/cffr/reference/cff_gha_update.html
+- 1.6 README
+      + additional setup for seewave
+      + brief demo usage
+      + compare to other packages, options
+      + describe how it integrates with other packages
+- 1.7 Documentation
+    - 1.7.1 General
+      + looks good: all functions documented with examples, citations in vignette
+      + looks good: good use of seealso, all functions have return
+      + highlight potential overlap in functionality
+    - 1.7.2 roxygen2 use
+    - 1.7.3 URLs in documentation
+- 1.8 Documentation website
+    - 1.8.1 Automatic deployment of the documentation website
+    - 1.8.2 Grouping functions in the reference
+    - 1.8.3 Branding of authors
+    - 1.8.4 Tweaking the navbar
+    - 1.8.5 Mathjax
+    - 1.8.6 Package logo
+- 1.9 Authorship
+    - 1.9.1 Authorship of included code
+- 1.10 Licence
+- 1.11 Testing
+- 1.12 Examples
+- 1.13 Package dependencies
+- 1.14 Recommended scaffolding
+- 1.15 Version Control
+- 1.16 Miscellaneous CRAN gotchas
+    - 1.16.1 CRAN checks
+- 1.17 Bioconductor gotchas
+- 1.18 Further guidance
+    - 1.18.1 Learning about package development
 
