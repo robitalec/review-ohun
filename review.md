@@ -171,7 +171,9 @@ lsf.str('package:ohun')
       + looks good: good use of seealso, all functions have return
       + highlight potential overlap in functionality
     - 1.7.2 roxygen2 use
+      + Add #' @noRd to internal functions.
     - 1.7.3 URLs in documentation
+      + URLs look good with `urlchecker`
 - 1.8 Documentation website
     - 1.8.1 Automatic deployment of the documentation website
     - 1.8.2 Grouping functions in the reference
@@ -182,9 +184,13 @@ lsf.str('package:ohun')
 - 1.9 Authorship
     - 1.9.1 Authorship of included code
 - 1.10 Licence
+      + looks good
 - 1.11 Testing
+      + consider using vdiffr for testing plots
 - 1.12 Examples
 - 1.13 Package dependencies
+      + see note about imports/depends
+      + 
 - 1.14 Recommended scaffolding
 - 1.15 Version Control
 - 1.16 Miscellaneous CRAN gotchas
