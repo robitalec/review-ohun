@@ -248,3 +248,9 @@ https://github.com/maRce10/ohun/pull/13
 
 
 
+##### NEWS
+
+It might be helpful to users if the items in NEWS were accompanied with
+references to the relevant pull requests and issues (eg. #5). For example:
+https://github.com/tidyverse/ggplot2/blob/main/NEWS.md
+
