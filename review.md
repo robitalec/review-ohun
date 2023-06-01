@@ -107,3 +107,25 @@ immediately obvious to a new user of `ohun`. It might be helpful to include a
 link to `seewave`'s installing and troubleshooting system requirements page, for
 example: https://rug.mnhn.fr/seewave/inst.html
 
+
+**Vignette(s)** 
+
+It might be worth splitting this vignette into multiple vignettes. At its
+current length, I find it a bit hard to digest all the moving pieces and
+options. I personally find it easier to learn and use R packages if there are
+many, shorter vignettes that describe the different major functions or steps
+offered. You could have maybe four vignettes: introduction, energy based
+detection, template based detection, and diagnosing/improving. The introductory
+could expand on how `ohun` integrates with other R packages in this field, and
+provide the background given in sections "Automatic sound event detection" and
+"Signal detection theory applied to bioacoustics". Then the following vignettes
+using the sections already written from the current vignette. This might just be
+my opinion - so if you feel like it is better for `ohun` users to have
+everything in one place, let me know.
+
+Throughout the vignette, the warnings and messages were not shown using the
+chunk options warnings=FALSE and messages=FALSE. I would recommend leaving all
+messages and warnings in the rendered vignette, because a user may be surprised
+and confused to see them appear locally, when they are not shown in the
+vignette.
+
