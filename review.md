@@ -153,3 +153,53 @@ Please consider also including the link to the repository
 (https://github.com/maRce10/ohun) in the URL field in the DESCRIPTION as it
 should have the most consistently up to date information for the package, for
 example in the case that the website is not updated.
+
+
+#### Functionality
+
+**Installation**
+
+**Functionality**
+
+**Performance**
+
+**Automated tests**
+
+**Packaging guidelines**
+
+Looks good: package name, snake_case, object_verb function naming, citation, and
+code metadata. Consider using this following options for 
+[keeping the code metadata up to date](https://github.com/ropensci/codemetar#keep-codemetajson-up-to-date) and
+for [keeping the CITATION file up to date](https://docs.ropensci.org/cffr/reference/cff_gha_update.html).
+
+Code style improved with a [recent
+commit](https://github.com/maRce10/ohun/commit/6a32910cd5a794e274dc96ca44a1ca486434e075)
+using the `styler` package. Before that, logical statements with `if` `else`
+were not easy to read.
+
+It is not clear whether or not functions in `ohun` are pipeable (see the second
+point
+[here](https://devguide.ropensci.org/building.html#function-and-argument-naming)).
+If you think that is a relevant option, consider including an example in the
+vignette that shows this.
+
+As mentioned above, the README could use more information about how `ohun` fits
+into the broader ecosystem, comparing `ohun` to other packages that provide
+related functionality and details on the system requirements for `seewave`. The
+README is also missing a brief demonstration of functionality (see the sixth
+point [here](https://devguide.ropensci.org/building.html#readme)). The long form
+examples in the vignettes are useful for a user that is already intending to use
+`ohun` but shorter examples in the README help new users understand what `ohun`
+is offering.
+
+Documentation looks good with all functions having accompanying examples,
+detailed return values and references included in the vignette. There is good
+use of `@seealso` to link users to related functions in `ohun`. Only one URL
+needed editing (according to `urlchecker`), see below.
+
+You could consider using `vdiffr` for testing plots. Currently the tests for
+functions that produce plots are just testing that they return NULL. This isn't
+a very useful test, and while testing plots is not straightforward or intuitive,
+you could see if `vdiffr` helps! More detailed comments on testing below.
+
+Detailed comments on package dependencies below.
