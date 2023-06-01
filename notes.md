@@ -55,6 +55,9 @@ R/
 
 Using internal functions from another package in 12 cases, though given all 12 are from warbleR and the maintainer of ohun is also the maintainer of warbleR this seems ok
 
+- there is mixed use of importFrom and :: which is fine, but I 
+https://r-pkgs.org/dependencies-in-practice.html#sec-dependencies-in-imports-r-code
+
 
 - stop2, warning2 function are custom functions so the call isnt printed.. why?
 
