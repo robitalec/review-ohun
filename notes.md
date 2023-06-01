@@ -91,7 +91,35 @@ eg. in `find_templates`
       )
 ```
 
+Class envelope only documented in print.envelope
 
+Why is this class required?
+Consider just including a function print_envelopes?
+
+Commented code in optimize_template_detector L226 - 231, 
+split_acoustic_data L265-267
+
+
+- use seq_len instead of 1:nrow
+``` r
+x <- data.frame(LETTERS[1:5])
+
+1:nrow(x)
+#> [1] 1 2 3 4 5
+
+seq_len(nrow(x))
+#> [1] 1 2 3 4 5
+
+x <- data.frame()
+
+1:nrow(x)
+#> [1] 1 0
+
+seq_len(nrow(x))
+#> integer(0)
+```
+
+<sup>Created on 2023-06-01 with [reprex v2.0.2](https://reprex.tidyverse.org)</sup>
 DESCRIPTION
 - dependencies
     - see below for run pak::pkg_deps_tree("ohun")
