@@ -43,6 +43,11 @@ CI
 
 R/
 - split off nested functions
+  - `detect_FUN` within `energy_detector`
+  - `internal_feature_reference` within `feature_reference`
+  - `env_ohun_int` within `get_envelopes`
+  - `XC_FUN` and `spc_FUN` within `template_correlator`
+  
 - ohun_package.R
     - "parallelization of tasks" 
         - using which parallel backend?
