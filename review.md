@@ -290,3 +290,10 @@ Relevant pull request:
 
 https://github.com/maRce10/ohun/pull/15
 
+##### Documentation
+
+I propose removing the "last modification date" from the R/ files
+since this information is redundant and more error prone than the information
+provided by Git. 
+
+
