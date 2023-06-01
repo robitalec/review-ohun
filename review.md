@@ -146,3 +146,10 @@ In `feature_acoustic_data.R`:
 - `could not find function "writeWave"` fixed by adding `library(tuneR)`
 
 
+
+**Community guidelines**
+
+Please consider also including the link to the repository
+(https://github.com/maRce10/ohun) in the URL field in the DESCRIPTION as it
+should have the most consistently up to date information for the package, for
+example in the case that the website is not updated.
