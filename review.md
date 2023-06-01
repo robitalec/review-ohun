@@ -232,7 +232,19 @@ I recommend that you delete, at least, the following files:
 Some of these files were presumably added before they were listed in the 
 `.gitignore` file. I have deleted them in the following pull request:
 
-https://github.com/maRce10/ohun/compare/master...robitalec:ohun:delete/git-ignored-files
+https://github.com/maRce10/ohun/pull/12
+
+
+
+##### README
+
+The badge for `R-CMD-check` seems to point to an old workflow. The current
+workflow (`tic`) shows failing tests, whereas the `R-CMD-check` shows passing 
+test. I would recommend removing this old badge if it is no longer relevant. 
+
+A couple minor edits to the README are in the following pull request:
+
+https://github.com/maRce10/ohun/pull/13
 
 
 
