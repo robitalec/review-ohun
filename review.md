@@ -271,3 +271,22 @@ multiple vignettes:
 Minor proposed edits to the vignette are in the following pull request:
 
 https://github.com/maRce10/ohun/pull/14
+
+
+
+##### Contributing
+
+The CONTRIBUTING.md document looks like it's based on the template from
+https://contributing.md/. Because of this, there were some places that 
+links to sections didn't work, and it often still referred to the CONTRIBUTING.md 
+version. 
+
+There isn't a code of conduct in the repository to link to, so I removed that 
+dead link. But please consider including one (see the rOpenSci pages for more
+details: [Contributing Guide](https://devguide.ropensci.org/contributingguide.html), 
+[Code of Conduct](https://ropensci.org/code-of-conduct/)). 
+
+Relevant pull request:
+
+https://github.com/maRce10/ohun/pull/15
+
