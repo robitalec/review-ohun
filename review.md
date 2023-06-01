@@ -48,6 +48,9 @@ looking at the [Reference](https://marce10.github.io/ohun/reference/index.html)
 page on the website or the list of available functions in `ohun`... how do they
 fit together?
 
+<details>
+<summary>Click to expand</summary>
+
 ```r
 library(ohun)
 #> Loading required package: tuneR
@@ -93,6 +96,10 @@ lsf.str('package:ohun')
 #>     type = "fourier", fbtype = "mel", ...)  
 #> template_detector : function (template.correlations, cores = 1, threshold, pb = TRUE, verbose = TRUE)
 ```
+
+
+</details>
+
 
 For 2), as @sammlapp mentions, it's really helpful for a user to be aware of
 what the options are and how they differ. The README for the `gt` package has a
@@ -290,6 +297,8 @@ Relevant pull request:
 
 https://github.com/maRce10/ohun/pull/15
 
+
+
 ##### Documentation
 
 I propose removing the "last modification date" from the R/ files
@@ -297,3 +306,8 @@ since this information is redundant and more error prone than the information
 provided by Git. 
 
 
+<details>
+<summary>Click to expand</summary>
+
+```
+</details>
