@@ -98,3 +98,12 @@ For 2), as @sammlapp mentions, it's really helpful for a user to be aware of
 what the options are and how they differ. The README for the `gt` package has a
 good example of this here:
 https://github.com/rstudio/gt#how-gt-fits-in-with-other-packages-that-generate-display-tables
+
+
+**Installation instructions**
+
+The dependency `seewave` brings system dependencies that might not be
+immediately obvious to a new user of `ohun`. It might be helpful to include a
+link to `seewave`'s installing and troubleshooting system requirements page, for
+example: https://rug.mnhn.fr/seewave/inst.html
+
