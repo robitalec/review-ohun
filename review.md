@@ -37,11 +37,20 @@ Estimated hours spent reviewing:
 
 **A statement of need**
 
+- TODO: compare, contrast with other options
+- TODO: how does ohun integrate with other packages?
+
+
 **Installation instructions**
 
 -   Please consider including a link to the documentation for the dependency `seewave` for installing and troubleshooting system requirements. For example: <https://rug.mnhn.fr/seewave/inst.html>
 
+
+
 **Vignette(s)** 
+
+- TODO: split into multiple vignettes
+- TODO: consider not blocking warnings that a user would get on their own machine
 
 **Function Documentation** 
 
@@ -73,5 +82,8 @@ In `feature_acoustic_data.R`:
 **Automated tests**
 
 **Packaging guidelines**
+
+- curly braces (looks like fixed using styler package (https://github.com/robitalec/ohun/commit/6a32910cd5a794e274dc96ca44a1ca486434e075)) 
+- 
 
 For **Community guidelines:**,
