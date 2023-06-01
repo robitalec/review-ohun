@@ -120,6 +120,20 @@ seq_len(nrow(x))
 ```
 
 <sup>Created on 2023-06-01 with [reprex v2.0.2](https://reprex.tidyverse.org)</sup>
+
+Testing
+- test that XYZ function *works* (test-energy_detector L6)
+- expect_true(TRUE) test-energy_detector L131
+- expect_true throughout where eg. expect_length, class etc could be used
+- lots of tests are just length check, are there any other expectations from the 
+functions other than they will return the right length?
+- expect NULL for a side effect function.. test-label_spectro
+- https://r-pkgs.org/testing-design.html
+- could also consider writing an internal function to load and write files
+to the temp dir see https://r-pkgs.org/testing-advanced.html
+
+
+
 DESCRIPTION
 - dependencies
     - see below for run pak::pkg_deps_tree("ohun")
