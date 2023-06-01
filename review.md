@@ -245,6 +245,10 @@ https://github.com/maRce10/ohun/pull/12
 
 ##### README
 
+Consider stating explicitly which package provides the parallel
+processing for `ohun` in the sentence starting 
+"All functions allow the parallelization of tasks..."
+
 The badge for `R-CMD-check` seems to point to an old workflow. The current
 workflow (`tic`) shows failing tests, whereas the `R-CMD-check` shows passing 
 test. I would recommend removing this old badge if it is no longer relevant. 
