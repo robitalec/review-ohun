@@ -213,3 +213,26 @@ I also felt like it would be easier to highlight specific lines of code
 by just editing them, instead of referring to eg. Lines 83-85 in some file. 
 No pressure to accept any of these pull requests directly, and I hope that you
 find it a clear and useful approach. 
+
+
+##### Repository
+
+The repository size is ~ 120 mb. 
+
+I recommend that you delete, at least, the following files:
+
+- .Rproj.user/
+- .Rhistory
+- ..Rcheck/
+- ..pdf
+- .Rdata
+- testing/
+- docs/ (in this case since you are using the pkgdown workflow with the gh-pages branch)
+
+Some of these files were presumably added before they were listed in the 
+`.gitignore` file. I have deleted them in the following pull request:
+
+https://github.com/maRce10/ohun/compare/master...robitalec:ohun:delete/git-ignored-files
+
+
+
