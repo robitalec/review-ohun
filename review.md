@@ -254,3 +254,20 @@ It might be helpful to users if the items in NEWS were accompanied with
 references to the relevant pull requests and issues (eg. #5). For example:
 https://github.com/tidyverse/ggplot2/blob/main/NEWS.md
 
+##### Vignette
+
+As mentioned above, consider splitting the single vignette into 
+multiple vignettes:
+
+- Get started vignette
+    - Background and theory
+    - How does ohun fit in
+    - What other packages does ohun interface with
+    - Overview of functions provided by ohun
+- Energy based detection
+- Template based detection
+- FAQ / best practices / advice / tips
+
+Minor proposed edits to the vignette are in the following pull request:
+
+https://github.com/maRce10/ohun/pull/14
